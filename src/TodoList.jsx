@@ -56,7 +56,10 @@ function TodoList() {
       <h2 className="second_title">What's the plan Today</h2>
 
       <div>
+        <div className="inputs">
+          
         <label htmlFor="new_task">NEW TASK !</label>
+        <br />
         <input
           type="text"
           id="task"
@@ -64,7 +67,9 @@ function TodoList() {
           value={todo.task}
           onChange={handleInputChange}
         />
+        <br />
         <label htmlFor="date">When ?</label>
+        <br />
         <input
           type="date"
           id="date"
@@ -72,8 +77,20 @@ function TodoList() {
           value={todo.date}
           onChange={handleInputChange}
         />
+         <br />
+        <label htmlFor="date">Time ?</label>
+        <br />
+        <input
+          type="time"
+          id="time"
+          name="time"
+          value={todo.time}
+          onChange={handleInputChange}
+        />
+        <br />
 
         <label htmlFor="priority">Priority level</label>
+        <br />
         <select
           name="prio"
           id="prio"
@@ -86,6 +103,7 @@ function TodoList() {
           <option value="High">High</option>
           <option value="ASAP">ASAP!!</option>
         </select>
+        </div>
         <br />
         <button onClick={handleAddTodo} className="btn_task">Add Task</button>
         <table>

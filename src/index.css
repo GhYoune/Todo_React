@@ -58,8 +58,9 @@ label{
 }
 input {
 height: 30px;
-border-radius: 30px;
-
+border-radius: 10px;
+width: 100%;
+text-align: center;
 
 }
 
@@ -83,4 +84,45 @@ border-radius: 30px;
   transition: 1s;
   font-weight: bold;
   cursor: pointer;
+}
+
+.inputs { 
+
+  padding: 20px;
+
+
+}
+
+.inputs input{
+
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.main_title{
+  font-size: 2.7rem;
+  font-weight: bold;
+  color: yellow;
+  text-decoration: underline;
+}
+
+.second_title{
+
+  font-size: 2.3rem;
+  color: #fff;
+}
+
+select{
+
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+  height: 30px;
+  margin-top: 20px;
+}
+
+label{
+  font-size: 1.3em;
+  font-weight: bold;
+ 
 }
