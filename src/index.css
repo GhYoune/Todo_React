@@ -1,0 +1,86 @@
+:root {
+  font-family: "Signika Negative", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+
+ 
+}
+body{
+  background-color: #36393f ;
+ 
+}
+
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+/* TodoList.css */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+ 
+}
+
+table, th, td {
+padding: 5px;
+}
+
+
+th, td {
+  margin-right: 50px;
+}
+
+th {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+}
+
+
+label{
+  color: #fff;
+  font-size: 1.2rem;
+
+}
+input {
+height: 30px;
+border-radius: 30px;
+
+
+}
+
+.btn_task{
+  width: 150px;
+  margin: 20px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: black;
+  color: wheat;
+  font-weight: bold;  
+  transition: 1s;
+}
+
+.btn_task:hover {
+  width: 160px;
+  margin: 20px;
+  height: 45px;
+  color: black;
+  background-color: white;
+  transition: 1s;
+  font-weight: bold;
+  cursor: pointer;
+}
