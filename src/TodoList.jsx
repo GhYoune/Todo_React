@@ -126,8 +126,8 @@ function TodoList() {
                 <td>{task.time}</td>
                 <td>{task.timestamp}</td>
                 <td>
-                  <button onClick={() => handleDelete(index)}>DELETE</button>{" "}
-                  <button onClick={() => handleUpdate(index)}>Update</button>
+                  <button onClick={() => handleDelete(index)}className="btn_delete">DELETE</button>{" "}
+                  <button onClick={() => handleUpdate(index)}className="btn_update">Update</button>
                 </td>
               </tr>
             ))}
