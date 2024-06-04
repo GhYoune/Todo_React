@@ -22,7 +22,7 @@ body{
   
 }
 
-/* TodoList.css */
+
 .container {
   max-width: 800px;
   margin: 0 auto;
@@ -33,27 +33,27 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
-  background-color: #2c2f33; /* Darker grey for the table background */
+  background-color: #2c2f33;
   border-radius: 8px;
-  overflow: hidden; /* Ensure border radius is applied */
+  overflow: hidden; 
 }
 
 th, td {
-  padding: 12px 15px; /* More padding for better spacing */
+  padding: 12px 15px; 
   text-align: left;
 }
 
 th {
-  background-color: #23272a; /* Slightly darker background for header */
-  color: #fff; /* White text color for header */
+  background-color: #23272a; 
+  color: #fff; 
 }
 td {
-  background-color: #3a3f44; /* Dark grey background for table cells */
-  color: #fff; /* White text color for cells */
+  background-color: #3a3f44; 
+  color: #fff; 
 }
 
 tr:nth-child(even) td {
-  background-color: #2c2f33; /* Alternate row color for better readability */
+  background-color: #2c2f33; 
 }
 
 button {
@@ -66,21 +66,21 @@ button {
 }
 
 button.btn_delete {
-  background-color: #ff4c4c; /* Red color for delete button */
+  background-color: #ff4c4c; 
   color: white;
 }
 
 button.btn_delete:hover {
-  background-color: #ff1a1a; /* Darker red on hover */
+  background-color: #ff1a1a; 
 }
 
 button.btn_update {
-  background-color: #4caf50; /* Green color for update button */
+  background-color: #4caf50; 
   color: white;
 }
 
 button.btn_update:hover {
-  background-color: #45a049; /* Darker green on hover */
+  background-color: #45a049; 
 }
 
 
@@ -112,7 +112,7 @@ text-align: center;
   width: 155px;
   margin: 20px;
   color: black;
-  background-color: white;
+  background-color: yellow;
   transition: 1s;
   font-weight: bold;
   cursor: pointer;
@@ -135,6 +135,7 @@ text-align: center;
   font-weight: bold;
   color: yellow;
   text-decoration: underline;
+  
 }
 
 .second_title{

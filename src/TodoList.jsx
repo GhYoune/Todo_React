@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 function TodoList() {
   const [todo, setTodo] = useState({
@@ -35,23 +36,47 @@ function TodoList() {
   };
 
   const handleAddTodo = () => {
-    if (todo.task.trim()) {
-      const newTask = {
-        ...todo,
-        timestamp: new Date().toLocaleString(), // Add timestamp
-      };
-      setList([...list, newTask]);
-      setTodo({
-        task: "",
-        prio: "",
-        date: "",
-        time: "",
+    if (!todo.task || !todo.prio || !todo.date || !todo.time) {
+      toast.error("Please fill in all fields.", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        icon: '❌',
       });
+      return;
     }
+
+    const newTask = {
+      ...todo,
+      timestamp: new Date().toLocaleString()
+    };
+    setList([...list, newTask]);
+    setTodo({
+      task: "",
+      prio: "",
+      date: "",
+      time: ""
+    });
+
+    toast.success("Task added successfully!", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      icon: '✅',
+    });
   };
 
   return (
     <div className="container">
+      <ToastContainer />
       <h1 className="main_title">TO DO LIST</h1>
       <h2 className="second_title">What's the plan Today</h2>
 
